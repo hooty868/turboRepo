@@ -1,0 +1,21 @@
+{
+    "name": "@repo/utils",
+    "type": "module",
+    "scripts": {
+        "dev": "tsc --watch",
+        "build": "tsc"
+    },
+    "exports": {
+        "./time": {
+            "types": "./src/time.ts",
+            "default": "./dist/time.js"
+        }
+    },
+    "devDependencies": {
+        "@repo/typescript-config": "workspace:*",
+        "typescript": "latest"
+    },
+    "dependencies": {
+        "moment": "^2.30.1"
+    }
+}
